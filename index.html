@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Assignment - VernoraTech</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        
+        .document {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .doc-title {
+            font-size: 20px;
+            color: #34495e;
+            margin-bottom: 5px;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .greeting {
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        
+        .url-box {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 14px;
+            word-break: break-all;
+            margin: 10px 0;
+        }
+        
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .sub-list {
+            margin-top: 8px;
+        }
+        
+        .sub-list li {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        .important {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+        
+        .signature {
+            margin-top: 30px;
+        }
+        
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .print-btn:hover {
+            background: #2980b9;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+            .document {
+                box-shadow: none;
+                margin: 0;
+                padding: 20px;
+            }
+            .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <button class="print-btn" onclick="window.print()">Print/Save as PDF</button> -->
+    
+    <div class="document">
+        <div class="header">
+            <div class="company-name">VernoraTech</div>
+            <div class="doc-title">Testing Assignment Document</div>
+            <div class="date">Date: September 16, 2025</div>
+        </div>
+        
+        <div class="greeting">
+            Hello <strong>Shubham Vishwakarma</strong> and <strong>Harsh Tiwari</strong>,
+            <br><br>
+            Here is your testing assignment for today:
+        </div>
+        
+        <div class="section">
+            <div class="section-title">What you need to do:</div>
+            <p>Please go to our restaurant management website:</p>
+            <div class="url-box"><a href="https://restaurant-manage-frontend.vercel.app/">https://restaurant-manage-frontend.vercel.app/</a></div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Your testing tasks:</div>
+            <ul>
+                <li><strong>Spend at least 4 hours</strong> testing the dashboard thoroughly</li>
+                <li>Test everything carefully to find any problems or bugs</li>
+                <li>Create proper test cases for these different types of testing:
+                    <ul class="sub-list">
+                        <li><strong>Unit Testing</strong> - test individual features one by one</li>
+                        <li><strong>Integration Testing</strong> - test how different parts work together</li>
+                        <li><strong>System Testing</strong> - test the whole system as users would use it</li>
+                        <li><strong>Regression Testing</strong> - make sure old features still work properly (this is very important)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="important">
+            <strong>Note:</strong> Please focus especially on Regression Testing as this is our highest priority.
+        </div>
+        
+        <div class="section">
+            <div class="section-title">What you need to submit:</div>
+            <p>Create a detailed test report that includes:</p>
+            <ul>
+                <li>All the test cases you created and ran</li>
+                <li>Any bugs or issues you found</li>
+                <li>Screenshots of problems if needed</li>
+                <li>Your recommendations for fixes</li>
+                <li>Results from each type of testing</li>
+                <li>Summary of time spent on each testing phase</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">When to complete:</div>
+            <p>Please finish all testing work today and send us your complete report by the end of the workday.</p>
+        </div>
+        
+        <div class="footer">
+            <p>Please take this testing seriously as it helps us improve our product quality.</p>
+            <p>Thank you for your hard work.</p>
+            
+            <div class="signature">
+                <p><strong>Best regards,</strong><br>
+                VernoraTech Team</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
